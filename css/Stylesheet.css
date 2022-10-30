@@ -828,6 +828,13 @@ span{
     display: none;
 }
 
+#red-btn{
+    background-color: #FF1204;
+}
+
+#blue-btn{
+    background-color: #5A1F6A;
+}
 
 
 @media (max-width : 1180px){
