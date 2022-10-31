@@ -159,22 +159,27 @@
         <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</h2>
         <div class="jury-elem responsive2">
             <div>
+                <span></span>
                 <img src="Images/Group 10276.png">
             </div>
 
             <div>
+                <span></span>
                 <img src="Images/Group 10276.png">
             </div>
 
             <div>
+                <span></span>
                 <img src="Images/Group 10276.png">
             </div>
 
             <div>
+                <span></span>
                 <img src="Images/Group 10276.png">
             </div>
 
             <div>
+                <span></span>
                 <img src="Images/Group 10276.png">
             </div>
                   
@@ -347,9 +352,13 @@
     <div class="container">
        <div class="int-tips">
          <h1>INTERVIEW TIPS</h1>
-         <div class="int-elem">
-            <div class="int-img"><img src="Images/Group 9940.png"></div>
-            <div class="int-text">
+         <div class="int-elem responsive3">
+            <div class="int-img intimg1"><img src="Images/Group 9940.png"></div>
+            <div class="int-img intimg2"><img src="Images/Group 9940.png"></div>
+            <div class="int-img intimg3"><img src="Images/Group 9940.png"></div>
+
+
+            <div class="int-text" id="intext-text">
 
                 <div class="intText-lay">
                     <img src="Images/Path 2795.png">
@@ -370,7 +379,6 @@
                     <img src="Images/Path 2795.png">
                     <p>Enhance communication skills: Candidates will learn how to explain their vision clearly so that the team understands day-to-day targets and prepare for the future.</p>
                 </div>
-
 
             </div>
          </div>    
@@ -517,11 +525,11 @@ $('.responsive2').slick({
       }
     },
     {
-      breakpoint: 480,
+      breakpoint: 570,
       settings: {
-        slidesToShow: 1,
+        slidesToShow: 2,
         slidesToScroll: 1,
-        arrows: false,
+        arrows: true,
         dots: true,
         autoplay: true,
         autoplaySpeed: 2400,
@@ -532,6 +540,54 @@ $('.responsive2').slick({
     // instead of a settings object
   ]
 });
+
+
+
+$('.responsive3').slick({
+  dots: false,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1110,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false,
+        arrows: false,
+        autoplay: false,
+        autoplaySpeed: 2200,
+
+    }
+    },
+    {
+      breakpoint: 810,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 2000,
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: false,
+        autoplay: true,
+        autoplaySpeed: 2400,
+      }
+    }
+  ]
+})
 
 
 </script>
