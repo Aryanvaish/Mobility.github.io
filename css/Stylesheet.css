@@ -440,7 +440,7 @@ body{
 }
 
 .slick-slide img {
-margin: 0 0 .8rem 6.2rem;
+margin: 0 auto .8rem auto;
 }
 
 .slick-next, .slick-prev{
@@ -454,12 +454,12 @@ margin: 0 0 .8rem 6.2rem;
 
 .slick-prev{
     z-index: 1;
-    /* left: 5%; */
+    left: -12%;
 }
 
 .slick-next {
     z-index: 1;
-    /* right: 7%; */
+    right: -12%;
 }
 
 .slick-next:hover{
@@ -853,6 +853,16 @@ span{
     display: none;
 }
 
+.int-elem{
+    width: 40.5rem;
+}
+
+.int-divider{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
 
 @media (max-width : 1180px){
     .navbar {
@@ -1013,6 +1023,10 @@ span{
 
     .int-text{
         margin: 5rem 0 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 0 3rem 0;
     }
 
     .Endbar {
@@ -1748,8 +1762,8 @@ span{
         display:none;
     }
 
-    .intText-lay{
-        display: none;
+    #intext-text{
+        display:none;
     }
 
     .slick-slide img {
